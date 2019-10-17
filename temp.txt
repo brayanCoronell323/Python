@@ -1,0 +1,11 @@
+except Exception as error:
+    print("se jodio")
+
+
+
+  vcard_url = QR_CODE_TEMPLATE % (vcard)
+        cnxn = ("/data/code.png")
+        qr_filename = '.'.join(["data/" + first_name + '-' + last_name, "png"])
+        with open(qr_filename, 'w') as qr_file_hdl:
+                 qr_file_hdl.write(cnxn)
+        print (qr_filename)
